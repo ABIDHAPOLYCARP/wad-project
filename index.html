@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+    <title>carousel</title>
+</head>
+<body>
+
+    <h1 class="text-info text-center fw-bolder container  text-">SUE COLLECTION</h1>
+ <br><br>
+ <hr class="line-warning">
+  
+  <style>
+    /* Custom CSS for Carousel appearance */
+    .carousel-item { align-items: center;
+      max-width: 100%; /* Fixed height for consistent slide sizing */
+      max-height: 100%;
+      background: no-repeat center center cover;
+    }
+
+    .carousel-item img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+
+    /* Gradient overlay to make caption text pop */
+    .carousel-caption {
+      background: rgba(0, 0, 0, 0.55);
+      border-radius: 12px;
+      padding: 1.5rem;
+      bottom: 3rem;
+      backdrop-filter: blur(4px);
+    }
+  </style>
+
+
+  <div class="container my-5">
+    <!-- Bootstrap Carousel -->
+    <div id="heroCarousel" class="carousel slide carousel-fade shadow-lg rounded-4 overflow-hidden" data-bs-ride="carousel">
+      
+      <!-- Carousel Indicators (Dots/Lines at the bottom) -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+
+      <!-- Carousel Inner Items -->
+      <div class="carousel-inner">
+        
+        <!-- Slide 1 (Active) -->
+        <div class="carousel-item active" data-bs-interval="4000">
+          <img src="images/img6.jpeg" class="d-block w-70" alt="Mountain Landscape">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="fw-bold fs-3">Majestic Mountains</h5>
+            <p class="mb-0">Explore breathtaking mountain ranges and scenic river valleys.</p>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="images/img2.jpeg" class="d-block w-70" alt="Serene Forest">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="fw-bold fs-3">Quiet Wilderness</h5>
+            <p class="mb-0">Find peace in dense evergreen forests and fresh mountain air.</p>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="images/img3.jpeg" class="d-block w-100" alt="Ocean Coastline">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="fw-bold fs-3">Ocean Breeze</h5>
+            <p class="mb-0">Relax along coastal shorelines with stunning sunset ocean views.</p>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="images/img9.jpeg" class="d-block w-100" alt="Waterfall Lake">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="fw-bold fs-3">Waterfall Escape</h5>
+            <p class="mb-0">Discover hidden waterfalls cascading into clear blue waters.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls (Previous / Next Buttons) -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+  </div>
+
+    
+</body>
+</html>
